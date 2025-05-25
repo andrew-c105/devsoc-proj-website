@@ -6,8 +6,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ea nisi rerum ab deleniti a incidunt. 
-        Veritatis vitae cupiditate accusantium, sit eveniet, sapiente magnam iste eaque ipsa reiciendis optio voluptates!</p>
+    <div class="wave-split">
+    <div class="left-side">
+      <p class="label">Daytime Me</p>
+    </div>
+    <div class="right-side">
+      <p class="label">Nighttime Me</p>
+    </div>
+    <div class="circle">
+      <div class="about-content" id="aboutText">
+        <h2>Welcome to My Profile</h2>
+        <p>Scroll down for more info ⬇️</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    let index = 0;
+    const messages = [
+      `<h2>Welcome to My Profile</h2><p>Scroll down for more info ⬇️</p>`,
+      `<h2>Who Am I?</h2><p>I’m a student with a love for contrast: logic and creativity, calm and chaos.</p>`,
+      `<h2>My Interests</h2><p>🌓 Coding by day, drawing by night. ☕ vs 🫖. Piano vs Guitar.</p>`,
+      `<h2>Opposites Attract</h2><p>I'm curious, quiet yet loud, introvert with bursts of extroversion.</p>`
+    ];
+    window.addEventListener('scroll', () => {
+      index = (index + 1) % messages.length;
+      document.getElementById('aboutText').innerHTML = messages[index];
+    });
+  </script>
 </body>
 </html>

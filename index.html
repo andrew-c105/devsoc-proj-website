@@ -6,25 +6,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="circle">
-      <div class="about-content" id="aboutText">
-        <h2>Welcome to My Profile</h2>
-        <p>Scroll down for more info ⬇️</p>
-      </div>
+  <div class="circle">
+    <div class="about-content" id="aboutText">
+      <h2>Welcome to My Profile</h2>
+      <p>Scroll down for more info ⬇️</p>
     </div>
+  </div>
   
-  <script>
-    let index = 0;
-    const messages = [
-      `<h2>Welcome to My Profile!</h2><p>Scroll down for more info ⬇️</p>`,
-      `<h2>Who Am I?</h2><p>Name: Andrew. Pronouns: He / Him. Degree & Year: 2nd Year Studing Adv Maths / CS. Hometown: Sydney</p>`,
-      `<h2>Hobbies</h2><p></p>`,
-    ];
-    
-    window.addEventListener('scroll', () => {
-      index = (index + 1) % messages.length;
-      document.getElementById('aboutText').innerHTML = messages[index];
-    });
+  <div class="slide" data-text='
+    <h2>Who Am I?</h2>
+    <p>Name: Andrew. Pronouns: He / Him. Degree & Year: 2nd Year Studying Adv Maths / CS. Hometown: Sydney</p>'></div>
+  
+  <div class="slide" data-text='
+    <h2>Hobbies</h2>
+    <p>badminton, basketball, gym, listening to music, driving, The Mini</p>'></div>
+
+  <div class="slide" data-text='
+    <h3>Not quite hobbies but things i do a lot</h3>
+    <p>doomscrolling, binging, gaming</p>'></div>
+
+  <div class="slide" data-text='
+    <h3>Things i want to get into more</h3>
+    <p>backpacking, photography, skiing</p>'></div>
+
+  <script src="script.js"></script>
+
   </script>
 </body>
 </html>

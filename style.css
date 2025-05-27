@@ -18,7 +18,7 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.25);
   border: 1.5px solid rgba(255, 255, 255, 0.3);
 
   width: 65vmin;
@@ -28,7 +28,7 @@ body, html {
   box-shadow: 
     0 0 20px rgba(255, 255, 255, 0.2), 
     0 0 40px rgba(0, 0, 0, 0.25);
-    
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,10 +42,25 @@ body, html {
 .about-content {
   max-width: 90%;
   color: white;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 2.2;
+  font-weight: 450;
   transition: opacity 0.3s ease-in-out;
+}
+
+.about-content h2, 
+.about-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+.about-content p {
+  font-weight: 500;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.9;
 }
 
 .slide {

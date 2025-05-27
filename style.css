@@ -2,8 +2,9 @@ body, html {
   margin: 0;
   padding: 0;
   background-image: url('background.gif');
-  background-size: cover;
-  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
   overflow: hidden;
   font-family: 'Arial', sans-serif;
@@ -16,26 +17,29 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.6);
-  width: 60vmin;
-  height: 60vmin;
+  background: rgba(255, 255, 255, 0.1);
+  width: 65vmin;
+  height: 65vmin;
   border-radius: 50%;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
   text-align: center;
   z-index: 10;
+  backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   overflow: hidden;
   cursor: grab;
 }
 
 .about-content {
-  max-width: 80%;
-  color: #333;
-  transition: opacity 0.3s ease-in-out;
+  max-width: 90%;
+  color: white;
   font-size: 1.1rem;
+  line-height: 1.6;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .slide {

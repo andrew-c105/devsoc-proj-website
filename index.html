@@ -6,28 +6,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wave-split">
-    <div class="left-side">
-      <p class="label">Daytime Me</p>
-    </div>
-    <div class="right-side">
-      <p class="label">Nighttime Me</p>
-    </div>
     <div class="circle">
       <div class="about-content" id="aboutText">
         <h2>Welcome to My Profile</h2>
         <p>Scroll down for more info ⬇️</p>
       </div>
     </div>
-  </div>
+  
   <script>
     let index = 0;
     const messages = [
-      `<h2>Welcome to My Profile</h2><p>Scroll down for more info ⬇️</p>`,
-      `<h2>Who Am I?</h2><p>I’m a student with a love for contrast: logic and creativity, calm and chaos.</p>`,
-      `<h2>My Interests</h2><p>🌓 Coding by day, drawing by night. ☕ vs 🫖. Piano vs Guitar.</p>`,
-      `<h2>Opposites Attract</h2><p>I'm curious, quiet yet loud, introvert with bursts of extroversion.</p>`
+      `<h2>Welcome to My Profile!</h2><p>Scroll down for more info ⬇️</p>`,
+      `<h2>Who Am I?</h2><p>Name: Andrew. Pronouns: He / Him. Degree & Year: 2nd Year Studing Adv Maths / CS. Hometown: Sydney</p>`,
+      `<h2>Hobbies</h2><p></p>`,
     ];
+    
     window.addEventListener('scroll', () => {
       index = (index + 1) % messages.length;
       document.getElementById('aboutText').innerHTML = messages[index];
